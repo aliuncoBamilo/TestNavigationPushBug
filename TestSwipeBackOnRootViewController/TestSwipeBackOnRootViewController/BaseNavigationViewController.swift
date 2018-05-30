@@ -18,9 +18,13 @@ class BaseNavigationViewController: UINavigationController, UIGestureRecognizerD
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        //I don't know why I have these code here! :-|
         self.interactivePopGestureRecognizer?.delegate = self
     }
     
+    
+    //I don't know why I have these code here! :-|
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
